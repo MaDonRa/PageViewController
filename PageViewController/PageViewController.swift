@@ -15,14 +15,14 @@ class PageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.SetupViewcontroller()
+        self.SetupViewController()
         self.SetupPageViewController()
     }
 }
 
 extension PageViewController: UIPageViewControllerDataSource {
     
-    private func SetupViewcontroller() {
+    private func SetupViewController() {
         
         guard let OneViewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController1") as? OneViewController else { return }
         OneViewController.BackgroundColor = UIColor.red
