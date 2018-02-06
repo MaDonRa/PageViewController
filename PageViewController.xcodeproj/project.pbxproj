@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		5D5B154B2029538E0005F40B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B154A2029538E0005F40B /* AppDelegate.swift */; };
-		5D5B154D2029538E0005F40B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B154C2029538E0005F40B /* ViewController.swift */; };
 		5D5B15502029538E0005F40B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B154E2029538E0005F40B /* Main.storyboard */; };
 		5D5B15522029538E0005F40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B15512029538E0005F40B /* Assets.xcassets */; };
 		5D5B15552029538E0005F40B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B15532029538E0005F40B /* LaunchScreen.storyboard */; };
+		5D5B155D202955570005F40B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B155C202955570005F40B /* PageViewController.swift */; };
+		5D5B155F202958A20005F40B /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B155E202958A20005F40B /* OneViewController.swift */; };
+		5D5B1561202958AE0005F40B /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B1560202958AE0005F40B /* TwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D5B15472029538E0005F40B /* PageViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5B154A2029538E0005F40B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D5B154C2029538E0005F40B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D5B154F2029538E0005F40B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D5B15512029538E0005F40B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D5B15542029538E0005F40B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D5B15562029538E0005F40B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D5B155C202955570005F40B /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		5D5B155E202958A20005F40B /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		5D5B1560202958AE0005F40B /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				5D5B154A2029538E0005F40B /* AppDelegate.swift */,
-				5D5B154C2029538E0005F40B /* ViewController.swift */,
 				5D5B154E2029538E0005F40B /* Main.storyboard */,
+				5D5B155C202955570005F40B /* PageViewController.swift */,
+				5D5B155E202958A20005F40B /* OneViewController.swift */,
+				5D5B1560202958AE0005F40B /* TwoViewController.swift */,
 				5D5B15512029538E0005F40B /* Assets.xcassets */,
 				5D5B15532029538E0005F40B /* LaunchScreen.storyboard */,
 				5D5B15562029538E0005F40B /* Info.plist */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D5B154D2029538E0005F40B /* ViewController.swift in Sources */,
+				5D5B1561202958AE0005F40B /* TwoViewController.swift in Sources */,
+				5D5B155D202955570005F40B /* PageViewController.swift in Sources */,
 				5D5B154B2029538E0005F40B /* AppDelegate.swift in Sources */,
+				5D5B155F202958A20005F40B /* OneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
