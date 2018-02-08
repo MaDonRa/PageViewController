@@ -36,14 +36,14 @@ extension PageViewController: UIPageViewControllerDataSource {
         SubViewController.append(ThirdViewController)
         
         guard let first = SubViewController.first else { return }
-        //setViewControllers([first], direction: .forward, animated: true, completion: nil)
-        setViewControllers([first], direction: .forward, animated: true) { (status) in
-            let abc : UIView = UIView()
-            abc.frame = CGRect(x: 0, y: 0, width: 375, height: 100)
-            abc.backgroundColor = UIColor.white
-            self.view.addSubview(abc)
-  
-        }
+        setViewControllers([first], direction: .forward, animated: true, completion: nil)
+//        setViewControllers([first], direction: .forward, animated: true) { (status) in
+//            let abc : UIView = UIView()
+//            abc.frame = CGRect(x: 0, y: 0, width: 375, height: 100)
+//            abc.backgroundColor = UIColor.white
+//            self.view.addSubview(abc)
+//
+//        }
     }
     
    
