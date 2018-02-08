@@ -34,31 +34,39 @@ extension PageViewController: UIPageViewControllerDataSource {
         
         guard let ThirdViewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController2") as? TwoViewController else { return }
         SubViewController.append(ThirdViewController)
+        
+        guard let first = SubViewController.first else { return }
+        //setViewControllers([first], direction: .forward, animated: true, completion: nil)
+        setViewControllers([first], direction: .forward, animated: true) { (status) in
+            let abc : UIView = UIView()
+            abc.frame = CGRect(x: 0, y: 0, width: 375, height: 100)
+            abc.backgroundColor = UIColor.white
+            self.view.addSubview(abc)
+  
+        }
     }
     
+   
     private func SetupPageViewController() {
         self.view.backgroundColor = UIColor.white
         
         self.dataSource = self
-        
-        guard let first = SubViewController.first else { return }
-        setViewControllers([first], direction: .forward, animated: true, completion: nil)
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         let CurrentIndex : Int = SubViewController.index(of: viewController) ?? 0
-        guard CurrentIndex > 0 else { return SubViewController.last }
+        guard CurrentIndex > 0 , let page = SubViewController.get(CurrentIndex - 1) else { return SubViewController.last }
         
-        return SubViewController[CurrentIndex - 1]
+        return page
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
         let CurrentIndex : Int = SubViewController.index(of: viewController) ?? 0
-        guard CurrentIndex < SubViewController.count-1 else { return SubViewController.first }
+        guard CurrentIndex < SubViewController.count-1 , let page = SubViewController.get(CurrentIndex + 1) else { return SubViewController.first }
         
-        return SubViewController[CurrentIndex + 1]
+        return page
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {

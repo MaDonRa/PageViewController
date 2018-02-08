@@ -14,6 +14,7 @@
 		5D5B155D202955570005F40B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B155C202955570005F40B /* PageViewController.swift */; };
 		5D5B155F202958A20005F40B /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B155E202958A20005F40B /* OneViewController.swift */; };
 		5D5B1561202958AE0005F40B /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B1560202958AE0005F40B /* TwoViewController.swift */; };
+		5D6F9A75202A9AAD00748EB5 /* OutOfRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6F9A74202A9AAD00748EB5 /* OutOfRange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5D5B155C202955570005F40B /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		5D5B155E202958A20005F40B /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		5D5B1560202958AE0005F40B /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		5D6F9A74202A9AAD00748EB5 /* OutOfRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutOfRange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				5D5B155C202955570005F40B /* PageViewController.swift */,
 				5D5B155E202958A20005F40B /* OneViewController.swift */,
 				5D5B1560202958AE0005F40B /* TwoViewController.swift */,
+				5D6F9A74202A9AAD00748EB5 /* OutOfRange.swift */,
 				5D5B15512029538E0005F40B /* Assets.xcassets */,
 				5D5B15532029538E0005F40B /* LaunchScreen.storyboard */,
 				5D5B15562029538E0005F40B /* Info.plist */,
@@ -144,6 +147,7 @@
 			files = (
 				5D5B1561202958AE0005F40B /* TwoViewController.swift in Sources */,
 				5D5B155D202955570005F40B /* PageViewController.swift in Sources */,
+				5D6F9A75202A9AAD00748EB5 /* OutOfRange.swift in Sources */,
 				5D5B154B2029538E0005F40B /* AppDelegate.swift in Sources */,
 				5D5B155F202958A20005F40B /* OneViewController.swift in Sources */,
 			);
